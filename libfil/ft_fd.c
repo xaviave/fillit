@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 12:06:55 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 12:10:45 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/23 15:24:57 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -58,10 +58,10 @@ char		*ft_fd_to_str(int tabsize, char *file)
 	return (strfd);
 }
 
-t_tetro			*ft_checkfile(char *file)
+t_tetro		*ft_checkfile(char *file)
 {
-	int			fdsize;
-	char		*str;
+	int		fdsize;
+	char	*str;
 
 	if (!(fdsize = ft_fd_len(file)))
 	{

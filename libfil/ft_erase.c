@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:42:37 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 12:35:42 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/23 13:00:04 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -22,6 +22,11 @@ void	ft_erase(char *result, t_tetro *lsttetro, int size)
 	{
 		if (result[i] == lsttetro->position)
 			result[i] = '.';
+		i++;
+	}
+	while (result[i])
+	{
+		result[i] = '\0';
 		i++;
 	}
 }

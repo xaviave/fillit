@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:42:44 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 11:46:12 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/23 15:12:53 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -69,11 +69,11 @@ int		ft_shapeerror(char *str, char *file)
 void	ft_error(int i)
 {
 	if (i == 1)
-		ft_putstr_fd("open/close error\n", 2);
+		ft_putstr_fd("error\n", 1);
 	if (i == 2)
-		ft_putstr_fd("sample size error\n", 2);
+		ft_putstr_fd("error\n", 1);
 	if (i == 3)
-		ft_putstr_fd("parse error\n", 2);
+		ft_putstr_fd("error\n", 1);
 	if (i == 4)
-		ft_putstr_fd("shape error\n", 2);
+		ft_putstr_fd("error\n", 1);
 }

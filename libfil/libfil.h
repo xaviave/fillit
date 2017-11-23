@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:48:13 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 12:36:00 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/23 15:22:34 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -37,7 +37,7 @@ int					ft_validshape(char *str, int len);
 int					ft_checkarround(char *str, int i, int k);
 t_tetro				*ft_sorttetro(char *str, int nbtetro);
 t_tetro				*ft_idintetro(int *hashid, int nbtetro);
-t_tetro				*ft_newtetro(int i, int j, int k, int l, char pos);
+t_tetro				*ft_newtetro(int i, int j, int k, int l);
 t_tetro				*ft_checkfile(char *file);
 void				ft_resolve(t_tetro *lsttetro, int size);
 int					ft_algo(char *result, t_tetro *lsttetro, int i, int size);

@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:46:46 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 11:53:49 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/23 15:22:23 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -22,13 +22,15 @@ t_tetro		*ft_idintetro(int *id, int nbtetro)
 
 	pos = 'A';
 	i = 0;
-	first = ft_newtetro(id[i], id[i + 1], id[i + 2], id[i + 3], pos);
+	first = ft_newtetro(id[i], id[i + 1], id[i + 2], id[i + 3]);
+	first->position = pos;
 	save = first;
 	pos++;
 	i += 4;
 	while (nbtetro > 1)
 	{
-		save->next = ft_newtetro(id[i], id[i + 1], id[i + 2], id[i + 3], pos);
+		save->next = ft_newtetro(id[i], id[i + 1], id[i + 2], id[i + 3]);
+		save->next->position = pos;
 		save = save->next;
 		i += 4;
 		nbtetro--;
@@ -38,14 +40,13 @@ t_tetro		*ft_idintetro(int *id, int nbtetro)
 	return (first);
 }
 
-t_tetro		*ft_newtetro(int i, int j, int k, int l, char pos)
+t_tetro		*ft_newtetro(int i, int j, int k, int l)
 {
 	t_tetro	*new;
 
 	if (!(new = (t_tetro*)malloc(sizeof(t_tetro))))
 		return (0);
 	new->forme = ft_shape(i, j, k, l);
-	new->position = pos;
 	return (new);
 }
 

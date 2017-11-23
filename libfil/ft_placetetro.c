@@ -1,26 +1,14 @@
 /* ************************************************************************** */
-<<<<<<< HEAD
 /*                                                          LE - /            */
 /*                                                              /             */
 /*   ft_placetetro.c                                  .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: llegros <marvin@le-101.fr>                 +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/11/23 11:47:03 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 11:56:07 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Created: 2017/11/23 12:55:57 by llegros      #+#   ##    ##    #+#       */
+/*   Updated: 2017/11/23 15:06:48 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
-=======
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_placetetro.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: llegros <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/20 14:41:14 by llegros           #+#    #+#             */
-/*   Updated: 2017/11/22 18:18:55 by llegros          ###   ########.fr       */
-/*                                                                            */
->>>>>>> b369d41a5721ff912296b1eb31738419738ae181
 /* ************************************************************************** */
 
 #include "libfil.h"
@@ -40,7 +28,7 @@ static int		ft_placetetro5(char *result, t_tetro *lsttetro, int i, int size)
 		result[i] = lsttetro->position;
 		result[i + size] = lsttetro->position;
 		result[i + size + 1] = lsttetro->position;
-		result[i + size * 2] = lsttetro->position;
+		result[i + size + 2] = lsttetro->position;
 		return (1);
 	}
 	return (ft_placetetro6(result, lsttetro, i, size));
