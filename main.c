@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:41:56 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 17:23:26 by llegros     ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/29 13:34:35 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -19,7 +19,7 @@ int		main(int ac, char *av[])
 
 	if (ac != 2)
 	{
-		ft_putstr("usage: ./fillit [sample]\n");
+		ft_putstr("usage: ./fillit sample\n");
 		return (0);
 	}
 	if (!ft_checkfile(av[1]))

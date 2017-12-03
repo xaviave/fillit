@@ -6,7 +6,7 @@
 /*   By: xamartin <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 11:48:04 by xamartin     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/23 11:48:06 by xamartin    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/11/27 15:15:02 by llegros     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -54,6 +54,8 @@ int			ft_validnb(char *str, int len)
 			i++;
 		}
 		lenc++;
+		if (lenc == 1 && nbhach != 4)
+			return (0);
 		if (nbhach / 4 != lenc || nbhach % lenc != 0)
 			return (0);
 	}
